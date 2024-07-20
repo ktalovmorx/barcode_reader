@@ -5,6 +5,7 @@
 
 
 ![Alt text](https://github.com/ktalovmorx/barcode_reader/blob/main/static/img/front_end.png?raw=true)
+![Alt text](https://github.com/ktalovmorx/barcode_reader/blob/main/uploads/code.jpg?raw=true)
 
 <h3>Instalación de Librerias</h3>
 
@@ -31,7 +32,6 @@ python app.py
     <li>En su celular, luego de tomar la fotografia, seleccione <code>Send Code</code></li>
     <li>Ahora en el area seleccionada, si la imagen fue leida correctamente, aparecerá el código leído</li>
 </ol>
-
 
 <h3>José Ernesto Morales Ventura | San Cristóbal | República Dominicana</h3>
 
