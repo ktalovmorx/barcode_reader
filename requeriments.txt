@@ -1,0 +1,6 @@
+Pillow
+qrcode
+pyautogui
+pyzbar
+pyzxing
+opencv-python

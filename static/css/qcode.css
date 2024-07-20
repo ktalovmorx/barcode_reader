@@ -1,0 +1,31 @@
+.content_container {
+   width: 50px; /* set the width of the container */
+   overflow: hidden; /* hide any content that overflows the container */
+}
+
+.data {
+   white-space: nowrap; /* prevent the text from wrapping to the next line */
+   text-overflow: ellipsis; /* display three dots at the end of the truncated text */
+   overflow: hidden; /* hide any text that exceeds the width of the container */
+}
+
+.arrow {
+  animation: arrow-animation 2s infinite;
+}
+
+@keyframes arrow-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.efecto-3d {
+  text-shadow: 1px 1px 0 #555, 1px 1px 0 #555, 1px 1px 0 #555;
+}

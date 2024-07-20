@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block title %}CyberLink{% endblock %}
+{% block note %}<br><span style='font-size:8px;'>You can to download any of this files</span>{% endblock %}
+{% block content %}
+	<div class='row' style='padding:0px'>
+		{% for _fx in _list %}
+			<div class='col-sm-3 content_container'>
+				<button type='button' class='btn btn-outline-light text-dark btn-block' style='width:100%;border:none'><a class='data' href='/{{_folder}}/{{ _fx }}' style='text-decoration:none;font-weight:bold;font-size:9px;font-family: "OCR-A", monospace;'>{{ _fx }} &darr;</a></button>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

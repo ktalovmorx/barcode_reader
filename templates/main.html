@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block title %}BarcodeReader{% endblock %}
+{% block content %}
+	<div class='container-fluid p-1 text-white text-center' style='margin-top:20px;font-family: "OCR-A", monospace;display:flex;flex-direction:row;justify-content: space-around;flex-wrap: wrap;'>
+		<div class='container p-1 bg-primary text-white text-center' style='border-radius:16px;'>
+			<a href='/' style='color:white;text-decoration:none'>
+			  <span>
+				  <img src="{{ url_for('static', filename='img/barcode.png') }}" alt='Softnow' width=75>
+			  </span><br>
+			  <span class='arrow col-md-12' style='font-size:8px;font-family: "OCR-A", monospace;'> Bar's Reader</span>
+			</a>
+		</div>
+		<div class="container" style="height:20px"></div>
+		<div class='container p-1 text-white text-center' style='border-radius:16px;'>
+			<form action='/scan' method='post' enctype='multipart/form-data'>
+				<div style="display: flex; flex-direction: row;justify-content: space-evenly;">
+					<div>
+						<input class='text-dark btn-sm' type='file' name='image' style='font-size:9px;width:100%' aria-label='Scan code' required>
+					</div>
+					<div>
+						<input class='btn btn-success btn-sm' type='submit' value='Send Code &uarr;' style='font-size:9px;width:100%'>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container" style="height:200px"></div>
+	<div style='bottom:0;position:relative;'>
+		<pre class='text-center' style='font-size:10px;font-family: "OCR-A", monospace;'>&copy; 2024 <code class="badge bg-primary">Bar's Reader</code> from SoftNow</pre>
+	</div>
+{% endblock %}
