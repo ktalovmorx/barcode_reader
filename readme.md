@@ -24,7 +24,7 @@ python app.py
 
 <ol>
     <li>Determine la dirección ipv4 de su computador</li>
-    <li>Acceda a la dirección <code>http://&lt;su_ipv4&gt;:5000</code> desde su celular(debes estar en la misma red que el servidor)</li>
+    <li>Acceda a la dirección <code>http://&lt;su_ipv4&gt;:5000</code> desde su celular(asegurate de estar conectado en la misma red que el servidor)</li>
     <li>Seleccione la opción para subir un archivo y escoja la opcion para tomar una fotografia</li>
     <li>Apunte hacia un código de barras</li>
     <li>En su pc enfoque el cursor en un area de texto donde desea que se escriba el código detectado posterior a un escaneo de código de barras</li>
