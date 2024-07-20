@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
+__author__ = 'Jose E. Morales Ventura'
+__date__ = '01/07/2024'
+__description__ = ""
+__url__ = "https://softnow-ptv.homes"
+
 import os
 import flask_bcrypt
 from flask_cors import CORS
@@ -29,16 +37,25 @@ PORT_FLASK = 5000
 
 @app.errorhandler(404)
 def page_not_found(error):
+    '''
+    '''
     return render_template('404.html'), 404
 
 @app.errorhandler(Exception)
 def handle_exception(e):
+    '''
+    '''
     return render_template('500.html'), 500
 
 @app.route('/scan', methods=['POST'])
 def upload_file():
+    '''
+    '''
 
-    def read_barcodes(image):
+    def read_barcodes(image:object) -> str:
+        '''
+        '''
+
         # Convertir la imagen a formato compatible con OpenCV
         image = cv2.imdecode(np.frombuffer(image.read(), np.uint8), cv2.IMREAD_COLOR)
 
@@ -74,13 +91,16 @@ def upload_file():
         return render_template('main.html')
 
 @app.route('/')
-def main():
-    """
+def main() -> object:
+    '''
     Vista principal
-    """
+    '''
     return render_template('main.html')
 
-def set_host(domain_name):
+def set_host(domain_name) -> None:
+    '''
+    '''
+
     #C:\Windows\System32\drivers\etc
     # Asigna el nombre de dominio y dirección IP en la red local
     nombre_de_dominio = 'barcode.local'
